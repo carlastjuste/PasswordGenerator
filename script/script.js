@@ -4,10 +4,14 @@ var generateBtn = document.querySelector("#generate");
 
 
 
+//Generate a password string base on the user selected criteria
 function generatePassword() {
-  alert ("select which criteria to include in the password");
+  alert ("Select which criteria to include in the password");
+
+
   var passLength = parseInt(prompt("Choose a length of at least 8 characters and no more than 128 characters"));
 
+  //evaluate user input for password length
   while (isNaN(passLength) || passLength < 8 || passLength > 128)
   {
     
@@ -24,6 +28,8 @@ function generatePassword() {
   var numChar = confirm("Do you want numbers in your password?");
   var specChar = confirm("Do you want special characters in your password?");
 
+
+  //evalute criteria for password generation
   if (lowerCase || upperCase || numChar || specChar)
   {
     var otherToGen = '';
@@ -70,7 +76,7 @@ function generatePassword() {
 }
 
 
-
+//generate random value based on length and string 
 function genchar(length, charlist) {
   var result = '';
   var charactersLength = charlist.length;
