@@ -10,6 +10,8 @@ The password can have a lenght between 8 and 128 characters and can include lowe
 * CSS
 * Javascript
 
+## Deployed link
+https://carlastjuste.github.io/PasswordGenerator/
 
 ## Mock-Up
 
